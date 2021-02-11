@@ -1,0 +1,117 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #548f76;
+    font-family: "Oswald",sans-serif;
+    margin-top: 95px;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto auto ;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 25px;
+}
+
+
+.add{
+    background-color: #24b459;
+    border-radius: 3px;
+    border: none;
+    color: white;
+    font-size: 25px;
+    padding: 1rem 1rem;
+    position: fixed;
+    top:1rem;
+    right:1rem;
+}
+
+.notes{
+    box-shadow: 0 0 10px 4px rgba(0,0,0,0.1);
+    width:400px;
+    height: 400px;
+    background-color: #fff;
+    margin-bottom: 25px;
+}
+
+.notes .tools{
+    background-color: #42c471;
+    padding:0.5rem;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.notes .tools button{
+    background-color: transparent;
+    color:#fff;
+    border:none;
+    font-size: 1rem;
+    margin-left: 0.5rem;
+}
+
+/* .noteTitle{
+    border:none;
+    outline:none;
+    left: 0;
+    background-color: transparent;
+    width:100%;
+} */
+.notes .main {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    background-color: #eee;
+}
+
+.notes textarea{
+    resize: none;
+    width: 100%;
+    height:400px;
+    outline: none;
+    border:none;
+    font-family: inherit;
+}
+.notes  .hidden{
+    display: none;
+}
+@media all and (max-width : 910px){
+    body{
+         grid-template-columns: auto auto;
+         margin-top: 100px;
+    }
+    .add{
+        font-size: 30px;
+        padding: 1rem 1rem;
+
+    }
+    .notes{
+        width: 310px;
+        height: 310px;
+    }
+    .notes .main{
+        height: 310px;
+    }
+    .notes textarea {
+        height: 310px;
+    }
+}
+
+@media all and (max-width : 650px){
+    body{
+         grid-template-columns: auto ;
+    }
+    .notes{
+        width: 310px;
+        height: 310px;
+    }
+    .notes .main{
+        height: 310px;
+    }
+    .notes textarea {
+        height: 310px;
+    }
+}
